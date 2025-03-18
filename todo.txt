@@ -1,0 +1,20 @@
+- password encryption
+- options error handling - mutually exclusive options
+
+
+- Write binary metadata
+Currently, file metadata is written using fprintf,
+which could cause parsing issues if file names contain
+special characters (e.g., newline). Instead, consider
+using binary metadata with a fixed structure:
+typedef struct {
+
+    uint32_t file_name_len;
+    uint64_t original_size;
+    uint64_t compressed_size;
+} FileMetadata;
+
+// Write binary metadata
+FileMetadata metadata = { strlen(file_path), file_size, compressed_size };
+fwrite(&metadata, sizeof(metadata), 1, archive);
+fwrite(file_path, 1, metadata.file_name_len, archive);

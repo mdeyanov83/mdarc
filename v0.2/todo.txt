@@ -1,0 +1,5 @@
+- use getopt to parse options
+
+    - use getopt to parse options and arguments in main() into the struct
+    - pass struct as const to functions
+- integrate wildcards in filenames

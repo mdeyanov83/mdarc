@@ -1,0 +1,6 @@
+
+- recurse into directories
+- password encryption
+- options error handling - mutually exclusive options
+
+

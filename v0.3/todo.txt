@@ -1,0 +1,7 @@
+- pass struct as const to functions
+- integrate wildcards in filenames
+- options error handling - mutually exclusive options
+
+        // TODO: implement support for wildcards *, ?, also directories
+        // TODO: implement support for encryption with password
+        // TODO: implement support for -option to list archive contents without unarchiving

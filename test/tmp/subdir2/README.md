@@ -1,5 +1,5 @@
 # mdarc - command line archiving tool
-#### Video demo: https://youtu.be/jqlAkJYL-4s
+#### Video demo: <URL here>
 #### Description:
 mdarc is a command line tool written in C for archiving and compressing a list of files into an single archive file. It can also extract the original contents from created archive.
 
@@ -93,7 +93,6 @@ traverse_directory() on the other hand - handles each entry individually, so the
 - Reworked add_file_to_list() to accept a single file path to be added, rather than a linked list of files and moved the list traversion to expand_wildcards_and_add()
 - Added error handling for archive and file names input
 - Added suport for directory and subdirectory recursion through traverse_directory() function and optional -r flag
-- Implemented functionality to unarchive mode - to recreate proper file path (for example missing subdirectories)
 
 #### v0.4
 
